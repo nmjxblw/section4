@@ -48,7 +48,7 @@
                         targets: dropping,
                         x: '+=' + (10*Math.random()),
                         y: '+=' + (10*Math.random()),
-                        duration: 250,
+                        duration: 25,
                         ease: 'Cubic.out'
                     });
 
@@ -56,7 +56,7 @@
                     this.tweens.add({
                         targets: dropping,
                         alpha: {from: 0.5, to: 0},
-                        duration: 5000,
+                        duration: 500,
                         ease: 'Cubic.in',
                         onComplete: () => dropping.destroy()
                     });
@@ -68,7 +68,7 @@
             width: 640,
             height: 520,
             scene: Demo,
-            backgroundColor: 0xdddddd,
+            backgroundColor: 0xffffff,
             parent: 'here'
         });
     </script>
